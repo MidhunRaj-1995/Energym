@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        .bdy_demo{background-color:Lavender;}
+        .demo{color:blue;font-family:calibri;}
+        #demo{color:red;font-family:calibri;}
+    </style>
+</head>
+<body class= "bdy_demo">
+<h1 class="demo">Login  </h1>
+<div id ="demo">please enter your details to proceed with login.</div>
+<form method="post" action="login">{% csrf_token %}
+    <input type="text" name="username" placeholder="Enter ur name"><br>
+    <input type= "text" name="password" placeholder="password"><br>
+    <input type= "submit"><br>
+</form>
+</body>
+</html>
